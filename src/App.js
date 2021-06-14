@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import PrivateRoute from './components/PrivateRoute';
@@ -22,7 +22,7 @@ function App() {
           </a>
         </header>
 
-        <PrivateRoute path="/bubble-colors" component={BubblePage} />
+        <PrivateRoute path="/colorslist" component={BubblePage} />
         <Route exact path="/" component={Login} />
       </div>
     </Router>
