@@ -22,7 +22,7 @@ function App() {
           </a>
         </header>
 
-        <PrivateRoute path="/colorslist" component={BubblePage} />
+        <PrivateRoute path="/bubbles" component={BubblePage} />
         <Route exact path="/" component={Login} />
       </div>
     </Router>

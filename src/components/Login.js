@@ -34,7 +34,7 @@ const Login = () => {
       .post('http://localhost:5000/api/login', credentials)
       .then((res) => {
         localStorage.setItem('token', res.data.payload);
-        push('/colorslist');
+        push('/bubbles');
       })
       .catch((err) => console.error(err));
 

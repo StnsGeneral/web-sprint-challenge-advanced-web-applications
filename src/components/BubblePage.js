@@ -24,7 +24,6 @@ const BubblePage = () => {
   };
 
   const mapColorEdit = (changedColor) => {
-    console.log(`colors before handling change? ${colors}`);
     return colors.map((color) => {
       if (Number(color.id) === Number(changedColor.id)) {
         return changedColor;
